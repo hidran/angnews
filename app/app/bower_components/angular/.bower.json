@@ -1,0 +1,16 @@
+{
+  "name": "angular",
+  "version": "1.2.18-build.237+sha.ad46641",
+  "main": "./angular.js",
+  "dependencies": {},
+  "homepage": "https://github.com/angular/bower-angular",
+  "_release": "1.2.18-build.237+sha.ad46641",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.2.18-build.237+sha.ad46641",
+    "commit": "d2fea54f4078aa912255c02e482003ffcdfd3e15"
+  },
+  "_source": "https://github.com/angular/bower-angular.git",
+  "_target": "~1.2.0",
+  "_originalSource": "angular"
+}
