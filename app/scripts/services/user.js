@@ -25,13 +25,13 @@ app.factory('User', ['$location','$rootScope','$firebase','FIREBASE_URL', 'Auth'
                   return $rootScope.currentUser;
               },
               signedIn : function(){
-                  return $rootScope !== undefined;
+                  return $rootScope.currentUser!== undefined;
               }
-      }
+      };
       
       $rootScope.$on('$firebaseSimpleLogin:login', function (e, authUser) {
           console.log(e,authUser);
-         alert(authUser.uid)
+
           var query = $firebase(ref.startAt(authUser.uid).endAt(authUser.uid));
          
           query.$on('loaded', function (ql) {
