@@ -5,7 +5,7 @@
 
 app.controller('PostsCtrl', ['$scope','Post','$location', function($scope, Post, $location){
     $scope.posts = Post.all;
-   
+   console.log(  $scope.posts);
      $scope.resetPost = function(){
         $scope.post ={url:'http://www.test.it', title:'test'};
     } ;
@@ -13,7 +13,7 @@ app.controller('PostsCtrl', ['$scope','Post','$location', function($scope, Post,
     
    
     $scope.deletePost = function(idx){
-        alert(idx);
+
        Post.delete(idx); 
     };   
 }

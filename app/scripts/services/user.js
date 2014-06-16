@@ -19,6 +19,7 @@ app.factory('User', ['$location','$rootScope','$firebase','FIREBASE_URL', 'Auth'
                   return users.$child(username);
               },
               setCurrentUser : function(username){
+
                   $rootScope.currentUser = User.findByUserName(username);
               },
               getCurrentUser : function(){
